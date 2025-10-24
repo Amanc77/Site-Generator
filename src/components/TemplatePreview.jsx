@@ -1,6 +1,8 @@
 import { Card } from "../components/ui/card";
 import TemplateA from "../components/templates/TemplateA";
 import TemplateB from "../components/templates/TemplateB";
+import TemplateC from "../components/templates/TemplateC";
+import TemplateD from "../components/templates/TemplateD";
 import { Eye } from "lucide-react";
 
 const TemplatePreview = ({ formData }) => {
@@ -15,8 +17,12 @@ const TemplatePreview = ({ formData }) => {
         <div className="transform scale-90 origin-top">
           {formData.template === "A" ? (
             <TemplateA data={formData} />
-          ) : (
+          ) : formData.template === "B" ? (
             <TemplateB data={formData} />
+          ) : formData.template === "C" ? (
+            <TemplateC data={formData} />
+          ) : (
+            <TemplateD data={formData} />
           )}
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Mail, Github, Twitter } from "lucide-react";
 
 const TemplateA = ({ data }) => {
@@ -16,11 +17,25 @@ const TemplateA = ({ data }) => {
     backgroundColor,
   } = data;
 
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = `https://fonts.googleapis.com/css2?family=${fontFamily.replace(
+      " ",
+      "+"
+    )}:wght@400;500;600;700&display=swap`;
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, [fontFamily]);
+
   return (
     <div
       style={{
         backgroundColor: backgroundColor,
-        fontFamily: fontFamily,
+        fontFamily: `${fontFamily}, sans-serif`,
         minHeight: "500px",
         padding: "3rem 2rem",
       }}

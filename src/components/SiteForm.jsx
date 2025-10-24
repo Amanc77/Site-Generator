@@ -105,6 +105,18 @@ const SiteForm = ({ formData, onFormChange, onGenerate }) => {
                 Template B - Split
               </Label>
             </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="C" id="templateC" />
+              <Label htmlFor="templateC" className="cursor-pointer">
+                Template C - Hero
+              </Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="D" id="templateD" />
+              <Label htmlFor="templateD" className="cursor-pointer">
+                Template D - Card
+              </Label>
+            </div>
           </RadioGroup>
         </div>
 
@@ -192,8 +204,6 @@ const SiteForm = ({ formData, onFormChange, onGenerate }) => {
               className="w-full px-3 py-2 border border-input rounded-md bg-background"
             >
               <option value="Inter">Inter</option>
-              <option value="italic">italic</option>
-
               <option value="Poppins">Poppins</option>
               <option value="Roboto">Roboto</option>
               <option value="Playfair Display">Playfair Display</option>
@@ -224,6 +234,7 @@ const SiteForm = ({ formData, onFormChange, onGenerate }) => {
           </div>
         </div>
 
+        {/* Generate Button */}
         <Button onClick={onGenerate} className="w-full mt-6" size="lg">
           <Code2 className="w-4 h-4 mr-2" />
           Generate Code
