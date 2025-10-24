@@ -1,17 +1,47 @@
-# React + Vite
+# Site Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple tool to create personal profile pages in seconds.  
+Customize your name, intro, links, colors, and fonts — then copy the static HTML to host anywhere.
 
-Currently, two official plugins are available:
+## Live Demo :- https://site-generator.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Video:- https://youtu.be/H7kIXlcjeL0
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Site-Generator
+**Site Generator** is a React + Vite app to make simple profile sites fast.  
+You fill your details, preview the design, and export clean HTML ready to deploy on **Vercel**, **Netlify**, or **GitHub Pages**.
+
+---
+
+## Features
+
+- Live customization for name, bio, and links  
+- 4 ready templates (A–D)  
+- Theme options for colors and fonts  
+- One-click HTML/CSS export  
+- Fully responsive design  
+
+---
+
+## Tech Stack
+
+React • Vite • Tailwind CSS • shadcn/ui • Lucide Icons
+
+---
+
+## Setup
+
+```bash
+git clone https://github.com/Amanc77/Site-Generator.git
+cd Site-Generator
+npm install
+npm run dev
+
+```
+
+Once it runs, open this link in your browser:
+👉 http://localhost:5173
