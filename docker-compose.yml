@@ -1,0 +1,7 @@
+services:
+  site-generator:
+    build: .
+    container_name: site-generator
+    ports:
+      - "5173:80"
+    restart: always
